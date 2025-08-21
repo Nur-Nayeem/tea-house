@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Tea Shop</title>
 </head>
 
-<body class="font-manrope container px-2.5 md:0 mx-auto">
-    <header class="flex flex-col-reverse md:flex-row items-center justify-between gap-6 my-16">
+<body class="font-manrope">
+    <header
+        class="container px-2.5 md:0 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-6 my-16">
         <!-- hero -->
         <div class="md:w-6/12">
             <h1 class="text-5xl md:text-[80px] font-extrabold text-[var(--color-dark1)] leading-normal ">It's good
@@ -43,7 +47,7 @@
             </div>
         </figure>
     </header>
-    <main class="my-32">
+    <main class="container px-2.5 md:0 mx-auto my-32">
         <!-- main content  -->
 
         <!-- Product section  -->
@@ -303,8 +307,68 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="bg-gradient-to-l from-[rgba(255,0,0,0.1)] to-[rgba(255,137,56,0.1)] py-32">
         <!-- footer section  -->
+        <div class="container px-2.5 md:0 mx-auto">
+            <div class="flex flex-col md:flex-row gap-6 md:items-center justify-between mb-24">
+                <figure>
+                    <img src="./images/cup.png" alt="">
+                </figure>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-10 mr-16">
+                    <p>Ready to get strated?</p>
+                    <button class="bg-gradient-to-l from-[#FF0000] to-[#FF8938] max-w-fit px-7 py-3.5 rounded-lg">
+                        <p class=" text-xl text-white font-bold">Get Started</p>
+                    </button>
+                </div>
+
+            </div>
+            <div class="flex flex-col lg:flex-row gap-40 items-start justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold text-[var(--color-dark1)] mb-[22px]">Quick Links</h3>
+                    <ul class="text-[var(--color-dark2)] flex flex-col gap-6">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-[var(--color-dark1)] mb-[22px]">Our Service</h3>
+                    <ul class="text-[var(--color-dark2)] flex flex-col gap-6">
+                        <li><a href="#">Life Insurance</a></li>
+                        <li><a href="#">Car Insurance</a></li>
+                        <li><a href="#">Health Insurance</a></li>
+                        <li><a href="#">House Insurance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-[var(--color-dark1)] mb-[22px]">Help</h3>
+                    <ul class="text-[var(--color-dark2)] flex flex-col gap-6">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-[var(--color-dark1)] mb-10">Subscribe to our newsletter</h2>
+                    <div class="flex items-center">
+                        <input type="email" placeholder="Email address"
+                            class="border-b-1 border-[#494949] py-5 outline-0">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-l from-[#FF0000] to-[#FF8938] rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-angle-right"></i>
+
+                        </div>
+                    </div>
+                    <div class="mt-12 text-2xl flex items-center gap-6">
+                        <i class="fa-brands fa-facebook-f w-6 h-6"></i>
+                        <i class="fa-brands fa-twitter w-6 h-6"></i>
+                        <i class="fa-brands fa-instagram w-6 h-6"></i>
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-center mt-16">© 2027 UIDesign.to - All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
